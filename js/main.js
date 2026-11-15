@@ -129,6 +129,36 @@ function setupTyping() {
   setTimeout(step, 2200);
 }
 
+/* ---------- Scroll progress bar ---------- */
+function setupScrollProgress() {
+  const bar = document.createElement("div");
+  bar.className = "scroll-progress";
+  bar.setAttribute("aria-hidden", "true");
+  document.body.prepend(bar);
+
+  function update() {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const ratio = max > 0 ? window.scrollY / max : 0;
+    bar.style.transform = "scaleX(" + ratio + ")";
+  }
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+}
+
+/* ---------- Cursor spotlight on cards ---------- */
+function setupGlowCards() {
+  const cards = document.querySelectorAll(".glow-card, .project-card, .info-card, .panel");
+  cards.forEach(function (card) {
+    card.classList.add("glow-card");
+    card.addEventListener("pointermove", function (event) {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty("--mx", (event.clientX - rect.left) + "px");
+      card.style.setProperty("--my", (event.clientY - rect.top) + "px");
+    });
+  });
+}
+
 /* ---------- Footer year ---------- */
 function setYear() {
   document.querySelectorAll(".year").forEach(function (el) {
@@ -141,4 +171,6 @@ setupHeaderScroll();
 setupReveal();
 setupCounters();
 setupTyping();
+setupScrollProgress();
+setupGlowCards();
 setYear();
