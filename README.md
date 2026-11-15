@@ -3,7 +3,7 @@
 **COS 106 – Introduction to Web Technologies · Term Project**
 **Student:** Undutimi Ayakoroma · BSc Software Engineering, 100 Level · MIVA Open University
 
-- **Live site:** https://cos106-portfolio.vercel.app
+- **Live site:** https://cos106-portfolio-zeta.vercel.app
 - **Repository:** https://github.com/christiantimi93-dev/cos106-portfolio
 
 A responsive, multi-page personal portfolio and academic management website built with **HTML5, CSS3 and vanilla JavaScript** (no frameworks).
