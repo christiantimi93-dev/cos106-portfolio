@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Undutimi Ayakoroma - web development and software engineering projects.">
+  <title>Undutimi Ayakoroma | Projects</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Undutimi Ayakoroma - home">UA</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container reveal">
+      <p class="eyebrow">What I've been building</p>
+      <h1 class="display-title">My Projects</h1>
+      <p class="lead">A selection of projects I've built while learning HTML, CSS and JavaScript. Use the filters to browse them by status.</p>
+    </section>
+
+    <section class="section container" aria-label="Project list">
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="live" aria-pressed="false">Live</button>
+        <button class="filter-btn" data-filter="progress" aria-pressed="false">In Progress</button>
+      </div>
+      <p class="filter-count" id="project-count" aria-live="polite">Showing 4 projects</p>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-status="live">
+          <img src="assets/images/project-portfolio.svg" alt="Screenshot of the student portfolio website homepage" width="640" height="400" loading="lazy">
+          <div class="project-body">
+            <span class="badge badge-gold">Live</span>
+            <h2>Student Portfolio Website</h2>
+            <p>This website! A responsive, multi-page portfolio built with semantic HTML, an external CSS stylesheet (Flexbox &amp; Grid) and vanilla JavaScript.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project-links">
+              <a href="index.html" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/christiantimi93-dev/cos106-portfolio" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-status="live">
+          <img src="assets/images/project-planner.svg" alt="Screenshot of the academic planner task list" width="640" height="400" loading="lazy">
+          <div class="project-body">
+            <span class="badge badge-gold">Live</span>
+            <h2>Academic Planner</h2>
+            <p>An interactive task manager for students. Add tasks with course and due date, mark them as done, filter and delete them. Tasks are saved in the browser.</p>
+            <ul class="tags"><li>JavaScript</li><li>DOM</li><li>localStorage</li></ul>
+            <div class="project-links">
+              <a href="planner.html" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/christiantimi93-dev/cos106-portfolio/blob/main/js/planner.js" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-status="progress">
+          <img src="assets/images/project-space.svg" alt="Screenshot of the space facts quiz app" width="640" height="400" loading="lazy">
+          <div class="project-body">
+            <span class="badge">In Progress</span>
+            <h2>Space Explorer Quiz</h2>
+            <p>A fun quiz app about planets, stars and space missions, inspired by my love for space. It shows one question at a time, keeps score and gives instant feedback.</p>
+            <ul class="tags"><li>JavaScript</li><li>Arrays</li><li>Events</li></ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm is-disabled" aria-disabled="true" title="Demo coming soon">Demo Soon</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-status="progress">
+          <img src="assets/images/project-football.svg" alt="Screenshot of the football score tracker" width="640" height="400" loading="lazy">
+          <div class="project-body">
+            <span class="badge">In Progress</span>
+            <h2>Football Score Tracker</h2>
+            <p>A simple match tracker for local football games: record goals, see a live scoreboard and keep a table of results for each team.</p>
+            <ul class="tags"><li>HTML</li><li>CSS Grid</li><li>JavaScript</li></ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm is-disabled" aria-disabled="true" title="Demo coming soon">Demo Soon</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta container reveal">
+      <h2>Have a project idea or feedback?</h2>
+      <a href="contact.html" class="btn">Get in touch <span aria-hidden="true">&rarr;</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span class="year">2026</span> Undutimi Ayakoroma &middot; COS 106 Term Project, MIVA Open University</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

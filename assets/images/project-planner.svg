@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#0b0b0b"/>
+  <rect x="40" y="30" width="560" height="340" rx="14" fill="#000" stroke="#2a2520" stroke-width="2"/>
+  <text x="70" y="78" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#9c7d55">ACADEMIC PLANNER</text>
+  <rect x="70" y="96" width="150" height="54" rx="8" fill="#151515"/><rect x="236" y="96" width="150" height="54" rx="8" fill="#151515"/><rect x="402" y="96" width="168" height="54" rx="8" fill="#151515"/>
+  <text x="145" y="130" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#c9a879">5</text>
+  <text x="311" y="130" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#c9a879">3</text>
+  <text x="486" y="130" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#c9a879">2</text>
+  <rect x="70" y="164" width="500" height="8" rx="4" fill="#151515"/><rect x="70" y="164" width="200" height="8" rx="4" fill="#c9a879"/>
+  <g font-family="Arial, sans-serif" font-size="15">
+    <rect x="70" y="190" width="500" height="46" rx="8" fill="#080808" stroke="#2a2520"/><rect x="70" y="190" width="5" height="46" fill="#e2735f"/>
+    <rect x="88" y="203" width="20" height="20" rx="5" fill="none" stroke="#9c7d55" stroke-width="2"/>
+    <text x="122" y="218" fill="#f3f1ee">Complete COS 106 term project</text>
+    <rect x="70" y="246" width="500" height="46" rx="8" fill="#080808" stroke="#2a2520"/><rect x="70" y="246" width="5" height="46" fill="#9c7d55"/>
+    <rect x="88" y="259" width="20" height="20" rx="5" fill="#9c7d55"/><text x="92" y="275" font-size="14" font-weight="700" fill="#000">&#10003;</text>
+    <text x="122" y="274" fill="#a9a49c" text-decoration="line-through">Revise HTML forms and tables</text>
+    <rect x="70" y="302" width="500" height="46" rx="8" fill="#080808" stroke="#2a2520"/><rect x="70" y="302" width="5" height="46" fill="#7fc49a"/>
+    <rect x="88" y="315" width="20" height="20" rx="5" fill="none" stroke="#9c7d55" stroke-width="2"/>
+    <text x="122" y="330" fill="#f3f1ee">Read Mathematics notes</text>
+  </g>
+</svg>

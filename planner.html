@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic planner - add, complete and delete study tasks.">
+  <title>Undutimi Ayakoroma | Academic Planner</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Undutimi Ayakoroma - home">UA</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container reveal">
+      <p class="eyebrow">Stay organised</p>
+      <h1 class="display-title">Academic Planner</h1>
+      <p class="lead">Add your assignments, readings and exams, tick them off when you're done, and delete what you no longer need. Your tasks are saved in this browser.</p>
+    </section>
+
+    <section class="section container planner" aria-label="Task planner">
+      <!-- ADD TASK FORM -->
+      <form id="task-form" class="panel task-form" novalidate>
+        <h2 class="panel-title">Add a Task</h2>
+        <div class="form-group">
+          <label for="task-title">Task</label>
+          <input type="text" id="task-title" name="title" placeholder="e.g. Finish COS 106 term project" maxlength="100">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="task-course">Course</label>
+            <input type="text" id="task-course" name="course" placeholder="e.g. COS 106" maxlength="20">
+          </div>
+          <div class="form-group">
+            <label for="task-date">Due date</label>
+            <input type="date" id="task-date" name="due">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="task-priority">Priority</label>
+          <select id="task-priority" name="priority">
+            <option value="high">High</option>
+            <option value="medium" selected>Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <p class="form-error" id="task-error" role="alert"></p>
+        <button type="submit" class="btn btn-block">Add Task <span aria-hidden="true">+</span></button>
+      </form>
+
+      <!-- TASK LIST -->
+      <div class="panel task-panel">
+        <div class="task-stats">
+          <p><span id="stat-total">0</span> Total</p>
+          <p><span id="stat-pending">0</span> Pending</p>
+          <p><span id="stat-done">0</span> Done</p>
+        </div>
+        <div class="progress" aria-label="Completion progress">
+          <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+        </div>
+        <p class="progress-text" id="progress-text">0% complete</p>
+
+        <div class="filter-bar" role="group" aria-label="Filter tasks">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="pending" aria-pressed="false">Pending</button>
+          <button class="filter-btn" data-filter="done" aria-pressed="false">Completed</button>
+        </div>
+
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+        <p id="empty-state" class="empty-state">No tasks here yet. Add your first task! &#128218;</p>
+
+        <button id="clear-done" class="btn btn-sm btn-ghost" type="button">Clear completed</button>
+      </div>
+    </section>
+
+    <!-- WEEKLY TIMETABLE (table) -->
+    <section class="section container" aria-labelledby="timetable-title">
+      <h2 id="timetable-title" class="section-title reveal">Weekly Study <span class="gold">Timetable</span></h2>
+      <div class="table-wrap reveal">
+        <table class="data-table">
+          <caption>My regular study schedule</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Morning</th>
+              <th scope="col">Evening</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Day">Monday</td><td data-label="Morning">COS 106: Web Technologies</td><td data-label="Evening">Coding practice</td></tr>
+            <tr><td data-label="Day">Tuesday</td><td data-label="Morning">Mathematics</td><td data-label="Evening">Reading &amp; revision</td></tr>
+            <tr><td data-label="Day">Wednesday</td><td data-label="Morning">Introduction to Computing</td><td data-label="Evening">Project work</td></tr>
+            <tr><td data-label="Day">Thursday</td><td data-label="Morning">General Studies</td><td data-label="Evening">Coding practice</td></tr>
+            <tr><td data-label="Day">Friday</td><td data-label="Morning">Assignments &amp; quizzes</td><td data-label="Evening">Rest / football &#9917;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span class="year">2026</span> Undutimi Ayakoroma &middot; COS 106 Term Project, MIVA Open University</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <template id="task-template">
+    <li class="task-item">
+      <label class="task-check">
+        <input type="checkbox">
+        <span class="checkmark" aria-hidden="true"></span>
+      </label>
+      <div class="task-info">
+        <p class="task-title"></p>
+        <p class="task-meta"></p>
+      </div>
+      <button class="task-delete" type="button">&times;</button>
+    </li>
+  </template>
+
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

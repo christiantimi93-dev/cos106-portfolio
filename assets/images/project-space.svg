@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <radialGradient id="planet" cx="0.35" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#e8c99a"/><stop offset="1" stop-color="#6e5634"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="400" fill="#05060c"/>
+  <g fill="#f3f1ee">
+    <circle cx="50" cy="40" r="1.5"/><circle cx="120" cy="90" r="1"/><circle cx="200" cy="30" r="2"/><circle cx="300" cy="70" r="1.2"/><circle cx="420" cy="25" r="1.6"/><circle cx="560" cy="60" r="1"/><circle cx="600" cy="140" r="1.8"/><circle cx="30" cy="200" r="1.2"/><circle cx="90" cy="330" r="1.6"/><circle cx="250" cy="360" r="1"/><circle cx="380" cy="380" r="1.4"/><circle cx="610" cy="340" r="1.2"/>
+  </g>
+  <circle cx="480" cy="150" r="80" fill="url(#planet)"/>
+  <ellipse cx="480" cy="150" rx="130" ry="26" fill="none" stroke="#c9a879" stroke-width="5" transform="rotate(-18 480 150)"/>
+  <rect x="50" y="210" width="330" height="150" rx="12" fill="rgba(12,12,12,0.92)" stroke="#2a2520" stroke-width="2"/>
+  <text x="72" y="244" font-family="Arial, sans-serif" font-size="13" fill="#9c7d55">QUESTION 3 OF 10 · SCORE 2</text>
+  <text x="72" y="272" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#f3f1ee">Which planet has the most moons?</text>
+  <rect x="72" y="288" width="138" height="28" rx="7" fill="#151515" stroke="#9c7d55"/><text x="141" y="307" text-anchor="middle" font-family="Arial" font-size="13" fill="#f3f1ee">Saturn</text>
+  <rect x="222" y="288" width="138" height="28" rx="7" fill="#151515" stroke="#2a2520"/><text x="291" y="307" text-anchor="middle" font-family="Arial" font-size="13" fill="#f3f1ee">Mars</text>
+  <rect x="72" y="324" width="138" height="28" rx="7" fill="#151515" stroke="#2a2520"/><text x="141" y="343" text-anchor="middle" font-family="Arial" font-size="13" fill="#f3f1ee">Earth</text>
+  <rect x="222" y="324" width="138" height="28" rx="7" fill="#151515" stroke="#2a2520"/><text x="291" y="343" text-anchor="middle" font-family="Arial" font-size="13" fill="#f3f1ee">Venus</text>
+</svg>
