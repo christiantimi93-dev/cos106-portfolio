@@ -174,3 +174,21 @@ setupTyping();
 setupScrollProgress();
 setupGlowCards();
 setYear();
+  // ===== DARK AND LIGHT MODE =====
+
+const themeToggle = document.createElement("button");
+
+themeToggle.id = "theme-toggle";
+themeToggle.textContent = "☀️ Light Mode";
+
+document.body.appendChild(themeToggle);
+
+themeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        themeToggle.textContent = "🌙 Dark Mode";
+    } else {
+        themeToggle.textContent = "☀️ Light Mode";
+    }
+});
